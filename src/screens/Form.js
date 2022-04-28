@@ -84,7 +84,7 @@ export default function Form() {
                         employees.map((employee, index) => {
                             return (
                                 <View style={styles.card} key={index}>
-                                    <Text style={{ textAlign: 'center' }}>Employee Form1</Text>
+                                    <Text style={{ textAlign: 'center' }}>Employee Form {index+1}</Text>
                                     <View style={styles.inputIconStyle}>
                                         <Icon style={{ marginHorizontal: 10 }} name="user" size={20} color="rgba(0,0,0,0.5)" />
                                         <TextInput onChangeText={(text) => setName(text, index)} style={{ flex: 1 }} placeholder='Enter your Name' />
